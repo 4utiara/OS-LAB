@@ -1,0 +1,22 @@
+//disk scheduling FCFS//
+#include<stdio.h>
+#include<stdlib.h>
+ 
+ int main(){
+     int RQ[100],i,n,TotalHeadMovement=0,initial;
+     printf("enter the number of requests");
+     scanf("%d",&n);
+     printf("enter the requests sequence\n");
+     for(i=0;i<n;i++){
+         scanf("%d",&RQ[i]);
+         
+     }
+     printf("enter the initial position");
+     scanf("%d",&initial);
+     for(i=0;i<n;i++){
+         TotalHeadMovement=TotalHeadMovement+abs(RQ[i]-initial);
+         initial=RQ[i];
+     }
+     printf("total head movement is%d",TotalHeadMovement);
+     return 0;
+ }
