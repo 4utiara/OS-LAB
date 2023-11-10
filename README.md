@@ -1,3 +1,3 @@
 # OS-LAB
-OS - LAB CODE
+OS/ SS - LAB CODE
 
