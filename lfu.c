@@ -2,7 +2,8 @@
 void print(int frameno,int frame[]){
 int j;
 for(j=0;j<frameno;j++)
-printf("%d\t",frame[j]);printf("\n");
+printf("%d\t",frame[j]);
+  printf("\n");
 }
 int main(){
 int i,j,k,n,page[50],frameno,frame[10],move=0,flag,count=0,count1[10]={0},repindex,leastcount;
