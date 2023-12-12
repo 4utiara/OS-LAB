@@ -19,12 +19,14 @@ frame[i]=-1;
 printf("ref string\tFrames\n");
 for(i=0;i<n;i++)
 {
-printf("%d\t\t\t",page[i]);flag=0;
+printf("%d\t\t\t",page[i]);
+  flag=0;
   for(j=0;j<frameno;j++){
   if(page[i]==frame[j]){
   flag=1;
-  count1[j]++;
-printf("No replacement\n");break; 
+  count1[j]++;//count1 is page hit
+printf("No replacement\n");
+    break; 
   }
 }
 if(flag==0&&count<frameno){
@@ -44,7 +46,8 @@ leastcount=count1[j];
 }
 }
 frame[repindex]=page[i];
-count1[repindex]=1;count++;print(frameno,frame);
+count1[repindex]=1;count++;
+  print(frameno,frame);
 }
 }
 printf("Number of page faults is %d\n",count);
