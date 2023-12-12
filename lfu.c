@@ -15,7 +15,7 @@ printf("Enter the number of frames\n");
   scanf("%d",&frameno);
 for(i=0;i<frameno;i++)
 frame[i]=-1;
-printf("Page reference string\tFrames\n");
+printf("ref string\tFrames\n");
 for(i=0;i<n;i++)
 {
 printf("%d\t\t\t",page[i]);flag=0;
